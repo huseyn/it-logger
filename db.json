@@ -1,5 +1,20 @@
 {
-  "logs": [],
+  "logs": [
+    {
+      "message": "salam",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2020-06-05T18:56:57.380Z",
+      "id": 1
+    },
+    {
+      "message": "balam",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2020-06-05T18:57:05.450Z",
+      "id": 2
+    }
+  ],
   "techs": [
     {
       "id": 1,

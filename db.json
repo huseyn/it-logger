@@ -1,45 +1,10 @@
 {
-  "logs": [
-    {
-      "id": 1,
-      "message": "salam",
-      "attention": true,
-      "tech": "Huseyn Mikayil",
-      "date": "2020-06-06T09:21:48.420Z"
-    },
-    {
-      "message": "balam",
-      "attention": true,
-      "tech": "Sara Wilson",
-      "date": "2020-06-05T18:57:05.450Z",
-      "id": 2
-    }
-  ],
+  "logs": [],
   "techs": [
-    {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
-    {
-      "id": 2,
-      "firstName": "Sam",
-      "lastName": "Smith"
-    },
-    {
-      "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wilson"
-    },
     {
       "firstName": "Huseyn",
       "lastName": "Mikayil",
-      "id": 4
-    },
-    {
-      "firstName": "Aziz",
-      "lastName": "Mikayil",
-      "id": 5
+      "id": 1
     }
   ]
 }

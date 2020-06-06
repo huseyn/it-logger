@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
+import TechSelectOptions from '../techs/TechSelectOptions';
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { updateLog } from "../../actions/logActions";
 
-const EditLogModal = ({current, updateLog }) => {
+const EditLogModal = ({ current, updateLog }) => {
   const [message, setMessage] = useState("");
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState("");
 
-  useEffect(()=>{
-    if(current){
+  useEffect(() => {
+    if (current) {
       setMessage(current.message);
       setAttention(current.attention);
       setTech(current.message);
@@ -26,11 +27,11 @@ const EditLogModal = ({current, updateLog }) => {
         message,
         attention,
         tech,
-        date:new Date()
+        date: new Date()
       }
 
       updateLog(updLog);
-      M.toast({html:`Log updated by ${tech}`});
+      M.toast({ html: `Log updated by ${tech}` });
 
       // Clear Fields
       setMessage("");
@@ -65,9 +66,7 @@ const EditLogModal = ({current, updateLog }) => {
               <option value="" disabled>
                 Select Technican
               </option>
-              <option value="John Doe">John Doe</option>
-              <option value="Sam Smith">Sam Smith</option>
-              <option value="Sara Wilson">Sara Wilson</option>
+              <TechSelectOptions />
             </select>
           </div>
         </div>
